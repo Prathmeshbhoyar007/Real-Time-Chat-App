@@ -6,7 +6,7 @@
   "scripts": {
     "server": "nodemon backend/server.js",
     "start": "node backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend && (npm config get prefix)/npm-windows-x64/7.21.1/bin/cp -r frontend/dist/* public"
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend && cp -r frontend/dist/* public"
   },
   "type": "module",
   "keywords": [],
