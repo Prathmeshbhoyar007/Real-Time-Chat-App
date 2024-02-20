@@ -49,7 +49,7 @@ export const signup = async (req, res) => {
 
       //Send success response
       res.status(201).json({
-        _id: newUser.fullName,
+        _id: newUser._id,
         fullName: newUser.fullName,
         userName: newUser.userName,
         profilePicture: newUser.profilePicture,
