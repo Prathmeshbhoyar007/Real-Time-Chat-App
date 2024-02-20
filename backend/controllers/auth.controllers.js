@@ -102,7 +102,7 @@ export const login = async (req, res) => {
 export const logout =  (req, res) => {
   try {
     //Clear the JWT cookie
-    res.cookie("jwt","", {maxAge: 0});
+    res.cookie("jwt", "", {maxAge: 0});
 
     //Send success response
     res.status(200).json({message: "Logged out successfully"})
